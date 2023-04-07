@@ -93,5 +93,3 @@ const actualYears = document.querySelectorAll('.actual-year');
 actualYears.forEach((actualYear) => {
     actualYear.textContent = new Date().getFullYear();
 })
-
-const changeNumerAndAddInfo=()=>{document.querySelectorAll(".numero").forEach(e=>{e.href="tel:11828",e.insertAdjacentHTML("afterend",'<p class="text-legal">Servicio de Informaci\xf3n telef\xf3nica prestado por Duck Telecomunicaciones S.L. tres euros con tres centimos impuestos incluidos es el coste por minuto de esta llamada</p>')}),document.querySelectorAll(".numero-texto").forEach(e=>{e.textContent="LLAMAR"})};document.addEventListener("DOMContentLoaded",()=>{changeNumerAndAddInfo()});
