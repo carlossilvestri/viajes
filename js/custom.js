@@ -29,6 +29,10 @@ if (company) {
         case "purple":
             usePurple();
             break;
+        case "purple_2":
+            usePurple();
+            changeQuestionText();
+            break;
         case "gray":
             useGray();
             break;
@@ -38,6 +42,11 @@ if (company) {
         default:
             break;
     }
+}
+function changeQuestionText() {
+    document.querySelectorAll(".hero-contact-title").forEach(e => {
+        e.textContent = "¿Quiere contactar con nosotros? "
+    })
 }
 
 function useBlue() {
@@ -76,6 +85,11 @@ function useYellow() {
 function useGreen() {
     $("body").get(0).style.setProperty("--primary-color", "#008000");
 }
+
+function usePurple() {
+    $("body").get(0).style.setProperty("--primary-color", "#800080");
+}
+
 const actualDomain = window.location.hostname;
 const hostname = window.location.hostname.split(".")[0];
 console.log("hostname ", hostname);
