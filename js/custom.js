@@ -31,7 +31,7 @@ if (company) {
             break;
         case "purple_2":
             usePurple();
-            changeQuestionText();
+            changeQuestionText2();
             break;
         case "gray":
             useGray();
@@ -43,7 +43,7 @@ if (company) {
             break;
     }
 }
-function changeQuestionText() {
+function changeQuestionText2() {
     document.querySelectorAll(".hero-contact-title").forEach(e => {
         e.textContent = "¿Quiere contactar con nosotros? "
     })
